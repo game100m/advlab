@@ -1,10 +1,9 @@
 import yt_dlp //นำเข้าไลบรารี yt_dlp ซึ่งใช้สำหรับดาวน์โหลดวิดีโอหรือเสียงจาก YouTube และเว็บไซต์อื่น ๆ ที่รองรับ
 
-def download_youtube_video(url, save_path="."): 
-"""download_youtube_video(url, save_path=".")
-ฟังก์ชันนี้รับ 2 พารามิเตอร์:
-url: ลิงก์วิดีโอ YouTube ที่จะดาวน์โหลด
-save_path: เส้นทางที่ใช้บันทึกวิดีโอ (ค่าเริ่มต้นคือโฟลเดอร์ปัจจุบัน ".")"""
+def download_youtube_video(url, save_path="."): //download_youtube_video(url, save_path=".")
+//ฟังก์ชันนี้รับ 2 พารามิเตอร์:
+//url: ลิงก์วิดีโอ YouTube ที่จะดาวน์โหลด
+//save_path: เส้นทางที่ใช้บันทึกวิดีโอ (ค่าเริ่มต้นคือโฟลเดอร์ปัจจุบัน ".")"""
     ydl_opts = {
         'outtmpl': f'{save_path}/%(title)s.%(ext)s', ////outtmpl: เป็นเทมเพลตชื่อไฟล์ที่บันทึก โดยใช้ชื่อวิดีโอ (%(title)s) และนามสกุลไฟล์ (%(ext)s) format: ดาวน์โหลดไฟล์วิดีโอคุณภาพดีที่สุด (best)
 
